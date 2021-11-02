@@ -82,13 +82,13 @@ public class ExceptionMain
 		{
 			excp.checkForException(age,name,id);
 		}
-		catch(ExceptionTest e)
+		catch(ExceptionTest exc)
 		{
-			if(e instanceof InvalidNameException)
+			if(exc instanceof InvalidNameException)
 			{
 				System.out.println("InvalidNameException : Name is invalid");
 			}
-			else if(e instanceof InvalidUserIdException)
+			else if(exc instanceof InvalidUserIdException)
 			{
 				System.out.println("InvalidUserIdException: User id is invalid");
 			}
